@@ -10,11 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func didTapButton(_ sender: Any) {
+        let title = "Title"
+        let message = "first line\n\nsecond line"
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        present(alertController, animated: true)
     }
-
-
 }
-
