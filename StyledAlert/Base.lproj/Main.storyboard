@@ -19,24 +19,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2d3-eK-eTD">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2d3-eK-eTD">
+                                <rect key="frame" x="87" y="382" width="240" height="132"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJY-aP-dVB">
+                                        <rect key="frame" x="19" y="41" width="202" height="46"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="UIAlertController"/>
+                                        <connections>
+                                            <action selector="didTapAlertControllerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AB6-Yv-ACp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbU-fI-pWf">
+                                        <rect key="frame" x="29.5" y="95" width="181" height="46"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="⚠️ UIAlertView"/>
+                                        <connections>
+                                            <action selector="didTapDeprecatedAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yd6-UU-9J2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="nbU-fI-pWf" firstAttribute="top" secondItem="sJY-aP-dVB" secondAttribute="bottom" constant="8" id="3kQ-4z-MLB"/>
+                                    <constraint firstItem="nbU-fI-pWf" firstAttribute="centerX" secondItem="2d3-eK-eTD" secondAttribute="centerX" id="Hrt-W6-XCQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="nbU-fI-pWf" secondAttribute="bottom" constant="-9" id="MII-eM-H75"/>
+                                    <constraint firstItem="sJY-aP-dVB" firstAttribute="centerX" secondItem="2d3-eK-eTD" secondAttribute="centerX" id="kU6-hJ-Mm2"/>
+                                    <constraint firstItem="sJY-aP-dVB" firstAttribute="top" secondItem="2d3-eK-eTD" secondAttribute="top" constant="41" id="v5V-c6-Sxl"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJY-aP-dVB">
-                                <rect key="frame" x="141" y="425" width="132" height="46"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <state key="normal" title="Show Alert"/>
-                                <connections>
-                                    <action selector="didTapAlertControllerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AB6-Yv-ACp"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="sJY-aP-dVB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ibm-I1-St3"/>
-                            <constraint firstItem="sJY-aP-dVB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hP4-fz-Fyq"/>
+                            <constraint firstItem="2d3-eK-eTD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.57971" id="96h-kk-alV"/>
+                            <constraint firstItem="2d3-eK-eTD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C7h-RC-wXk"/>
+                            <constraint firstItem="2d3-eK-eTD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eg4-Fy-cad"/>
+                            <constraint firstItem="2d3-eK-eTD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JMS-T7-sVJ"/>
+                            <constraint firstItem="2d3-eK-eTD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RcQ-8S-TfZ"/>
+                            <constraint firstItem="2d3-eK-eTD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Um0-b8-Acc"/>
                         </constraints>
                     </view>
                 </viewController>

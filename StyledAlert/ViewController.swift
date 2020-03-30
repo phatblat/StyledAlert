@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let title = "UIAlertView"
         let message = "⚠️ This class is deprecated."
 
-        let alert = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "OK")
+        let alert = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "OK", otherButtonTitles: "Cancel")
         alert.show()
     }
 }
